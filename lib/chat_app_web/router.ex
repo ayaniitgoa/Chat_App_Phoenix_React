@@ -17,6 +17,7 @@ defmodule ChatAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/:id", PageController, :index
   end
 
   # Other scopes may use custom stacks.
